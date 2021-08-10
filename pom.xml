@@ -22,6 +22,18 @@
     <maven.compiler.plugin.version>3.8.1</maven.compiler.plugin.version>
   </properties>
 
+	<distributionManagement>
+	 <repository>
+	  <id>nexus</id>
+	  <name>NV Techonlogies Release Repo</name>
+	  <url>http://34.227.242.174:8081/repository/naresh-release/</url>
+	 </repository>
+	 <snapshotRepository>
+	  <id>nexus</id>
+	  <name>NV Techonlogies Snapshot Repo</name>
+	  <url>http://34.227.242.174:8081/repository/naresh-snapshot/</url>
+	 </snapshotRepository>
+	</distributionManagement>
   <build>
     <plugins>
       <plugin>
